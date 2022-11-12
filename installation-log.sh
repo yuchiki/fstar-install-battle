@@ -53,6 +53,7 @@ echo $PATH | grep opam
 # cf. https://github.com/FStarLang/FStar/blob/master/INSTALL.md#opam-package
 
 ## versionを指定して fstar のインストール (10分かかる)
+## 上の手順書だと master ブランチ最新版をとってきているが、安定しないので代わりにタグを切られたバージョンを取ってくることにした
 opam pin add fstar https://github.com/FStarLang/FStar.git  --with-version "2022.11.07"
 fstar.exe --version
 # F* 2022.11.07~dev
