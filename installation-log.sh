@@ -18,7 +18,7 @@ opam --version # 2.1.3
 
 # https://github.com/FStarLang/FStar/blob/master/INSTALL.md#prerequisites-working-ocaml-setup
 
-# opam init に bwrapが必要と言われるので、 bwarapをインストール
+# opam init に bwrapが必要と言われるので、 bwrapをインストール
 
 ## apt更新
 sudo apt update
@@ -46,10 +46,11 @@ opam init
 source ~/.zshrc
 
 ## PATHにopam周りが入っていることを確認
- $ echo $PATH | grep opam
-/home/vscode/.opam/default/bin:/vscode/vscode-server/bin/linux-x64/8fa188b2b301d36553cbc9ce1b0a146ccb93351f/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/vscode/.local/bin
+echo $PATH | grep opam
+# /home/vscode/.opam/default/bin:/vscode/vscode-server/bin/linux-x64/8fa188b2b301d36553cbc9ce1b0a146ccb93351f/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/vscode/.local/bin
 
 # fstarのインストール
+# cf. https://github.com/FStarLang/FStar/blob/master/INSTALL.md#opam-package
 
 ## versionを指定して fstar のインストール (10分かかる)
 opam pin add fstar https://github.com/FStarLang/FStar.git  --with-version "2022.11.07"
